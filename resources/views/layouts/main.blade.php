@@ -14,6 +14,9 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('css/main-design.css') }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
     @stack('style')
 
     <title>Heiwa {{ $title }}</title>
@@ -25,12 +28,12 @@
         <div class="navbar">
             <i class="bx bx-menu side-open"></i>
             <span class="logo navLogo">
-                <a href="/">KANGPISMAN</a>
+                <a href="/">KangPisMan</a>
             </span>
             <div class="menu">
                 <div class="logo-toggle">
                     <span class="logo">
-                        <a href="/">KANGPISMAN</a>
+                        <a href="/">KangPisMan</a>
                     </span>
                     <i class="bx bx-x side-close"></i>
                 </div>
@@ -75,9 +78,9 @@
             <div class="footer-wrapper">
                 <div class="footer-desc">
                     <a href="/">
-                        <h1>KANGPISMAN</h1>
+                        <h1>KangPisMan</h1>
                     </a>
-                    <p>About
+                    <p>Gerakan KangPisMan merupakan kependekan dari kata Kurangi, Pisahkan dan Manfaatkan Sampah. Kurangi sampah berarti setiap warga memiliki kesadaran untuk menggunakan kembali barang-barang yang masih bisa digunakan. Seperti kertas bekas, botol bekas.
                     </p>
                 </div>
                 <div class="footer-contact">

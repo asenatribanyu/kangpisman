@@ -151,12 +151,7 @@
                 <div class="hero-info">
                     <div class="hero-desc">
                         <p>
-                            <i><b style="font-weight: 500">Heiwa Program</b></i> merupakan program inisiasi dari komunitas
-                            di
-                            Jepang yaitu Shounan Asia.
-                            Yayasan
-                            yang dimotori oleh Mr. Wagai Minoru ini memiliki tujuan untuk menyebarkan kedamaian ke seluruh
-                            dunia agar peperangan terutama menggunakan bom atom/ nuklir tidak terjadi lagi.
+                            <i><b style="font-weight: 500">Gerakan KangPisMan</b></i>  merupakan kependekan dari kata Kurangi, Pisahkan dan Manfaatkan Sampah. Kurangi sampah berarti setiap warga memiliki kesadaran untuk menggunakan kembali barang-barang yang masih bisa digunakan. Seperti kertas bekas, botol bekas.
                         </p>
                         <a href="/about">Learn More</a>
                     </div>
@@ -283,10 +278,59 @@
                 @endforeach
             </div>
             <!-- End of Image Gallery -->
+            <div> Lokasi TPS Terdekat</div>
+            <div id='map' style='width: 1030px; height: 325px; border-radius:10px'></div>
         </div>
     </div>
 @endsection
 
 @push('script')
     <script src="{{ asset('js/home-script.js') }}"></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYXNlbmExMiIsImEiOiJjbGo0ZDBqaDYwMHlkM3JsdzZjbHJsdzlpIn0.1NB6CTrTqpuZz1x_x-NiTg';
+        var map = new mapboxgl.Map({
+          container: 'map',
+          center: [107.601312,  -6.922819],
+          zoom: 13,
+          style: 'mapbox://styles/mapbox/streets-v11'
+        });
+        var places = [
+            {
+                name: 'TPS Panjunan',
+                coordinates: [ 107.60004692287535, -6.9306364523001385],
+                description: 'Jl. Bojongloa No.53/93, Panjunan, Kec. Astanaanyar, Kota Bandung, Jawa Barat 40242'
+                
+            },
+            {
+                name: 'TPS Pasar Ancol',
+                coordinates: [107.61583937116522, -6.932223977269878],
+                description: 'Jl. Pungkur No.236, Ancol, Kec. Regol, Kota Bandung, Jawa Barat 40254'
+            },
+            {
+                name: 'TPS-SPA Tegallega',
+                coordinates: [107.60638167970275, -6.9327424492639],
+                description: 'Jl. Moch. Toha No.58, Ciateul, Kec. Regol, Kota Bandung, Jawa Barat 40252'
+            },
+            {
+                name: 'TPS 3R Kebon Jeruk Beriman',
+                coordinates: [ 107.60161292279886,-6.916406668038759],
+                description: 'Jl. Babatan No.5, Kb. Jeruk, Kec. Andir, Kota Bandung, Jawa Barat 40181'
+            }
+            // Add more places as needed
+        ];
+
+        // Add markers for each place
+        places.forEach(function(place) {
+            var popup = new mapboxgl.Popup().setHTML('<h3>' + place.name + '</h3><p>' + place.description + '</p>');
+
+            var marker = new mapboxgl.Marker({color: '#ff0000'})
+                .setLngLat(place.coordinates)
+                .addTo(map);
+
+            marker.setPopup(popup);
+            marker.on('click', function() {
+                marker.togglePopup();
+            });
+        });
+      </script>
 @endpush

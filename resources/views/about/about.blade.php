@@ -20,7 +20,7 @@
                 <div class="about-info">
                     <div class="title title-1">About Us</div>
                     <p style="text-indent: 50px">
-                        About
+                        Gerakan KangPisMan merupakan kependekan dari kata Kurangi, Pisahkan dan Manfaatkan Sampah. Kurangi sampah berarti setiap warga memiliki kesadaran untuk menggunakan kembali barang-barang yang masih bisa digunakan. Seperti kertas bekas, botol bekas.
 
                     </p>
                 </div>
