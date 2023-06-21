@@ -13,14 +13,16 @@
                     <img src="img/about.jpg" alt="" />
                 </div> --}}
                 <div class="img-about pos-2">
-                    <img src="img/about.png" alt="" />
+                    <img src="img/KangPisMan.png" alt="" />
                 </div>
             </div>
             <div class="about-info-wrapper">
                 <div class="about-info">
                     <div class="title title-1">About Us</div>
                     <p style="text-indent: 50px">
-                        Gerakan KangPisMan merupakan kependekan dari kata Kurangi, Pisahkan dan Manfaatkan Sampah. Kurangi sampah berarti setiap warga memiliki kesadaran untuk menggunakan kembali barang-barang yang masih bisa digunakan. Seperti kertas bekas, botol bekas.
+                        Gerakan KangPisMan merupakan kependekan dari kata Kurangi, Pisahkan dan Manfaatkan Sampah. Kurangi
+                        sampah berarti setiap warga memiliki kesadaran untuk menggunakan kembali barang-barang yang masih
+                        bisa digunakan. Seperti kertas bekas, botol bekas.
 
                     </p>
                 </div>
@@ -77,7 +79,7 @@
         </div>
 
         <div class="hero">
-            <iframe src="https://www.youtube.com/embed/4MoRLTAJY_0?autoplay=0" title="YouTube video player" frameborder="0"
+            <iframe src="https://www.youtube.com/embed/uNcVM1yVcEg?autoplay=0" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
         </div>

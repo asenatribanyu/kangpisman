@@ -20,8 +20,7 @@
                                             href="/categories?category={{ $category->category_name }}">{{ $category->category_name }}</a>
                                     @endforeach
                                 </div>
-                                <a class="carousel-title"
-                                    href="/{{ $pin->slug }}">{{ $pin->title }}</a>
+                                <a class="carousel-title" href="/{{ $pin->slug }}">{{ $pin->title }}</a>
                                 <small>{{ $pin->created_at->format('j/F/Y') }}</small>
                             </div>
                         @else
@@ -151,7 +150,10 @@
                 <div class="hero-info">
                     <div class="hero-desc">
                         <p>
-                            <i><b style="font-weight: 500">Gerakan KangPisMan</b></i>  merupakan kependekan dari kata Kurangi, Pisahkan dan Manfaatkan Sampah. Kurangi sampah berarti setiap warga memiliki kesadaran untuk menggunakan kembali barang-barang yang masih bisa digunakan. Seperti kertas bekas, botol bekas.
+                            <i><b style="font-weight: 500">Gerakan KangPisMan</b></i> merupakan kependekan dari kata
+                            Kurangi, Pisahkan dan Manfaatkan Sampah. Kurangi sampah berarti setiap warga memiliki kesadaran
+                            untuk menggunakan kembali barang-barang yang masih bisa digunakan. Seperti kertas bekas, botol
+                            bekas.
                         </p>
                         <a href="/about">Learn More</a>
                     </div>
@@ -191,8 +193,7 @@
                                         @endforeach
                                     </div>
                                     <div class="card-title">
-                                        <a href="/{{ $article->slug }}"
-                                            class="card-home-title">{{ $article->title }}</a>
+                                        <a href="/{{ $article->slug }}" class="card-home-title">{{ $article->title }}</a>
                                     </div>
                                     <div class="card-desc">
                                         <p>{{ $article->excerpt }}</p>
@@ -265,7 +266,7 @@
                 <hr />
             </div>
 
-            <div class="header">
+            {{-- <div class="header">
                 <h1>Photos</h1>
                 <a href="/categories">View All Photos &#8594;</a>
             </div>
@@ -277,9 +278,20 @@
                             alt="" /></div>
                 @endforeach
             </div>
-            <!-- End of Image Gallery -->
-            <div> Lokasi TPS Terdekat</div>
-            <div id='map' style='width: 1030px; height: 325px; border-radius:10px'></div>
+            <!-- End of Image Gallery --> --}}
+
+            <!-- Map -->
+            <div class="header">
+                <h1>Location</h1>
+                <a href="https://www.google.com/maps?output=search&q=tps+karanganyar+astana+anyar&entry=mc&sa=X&ved=2ahUKEwix9Je8udP_AhVRb2wGHQa8BdsQ0pQJegQICRAB"
+                    target="_blank">View All
+                    Locations &#8594;</a>
+            </div>
+
+            <div class="map-wrapper">
+                <div id='map' class="map"></div>
+            </div>
+            <!-- End of Map -->
         </div>
     </div>
 @endsection
@@ -289,17 +301,16 @@
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiYXNlbmExMiIsImEiOiJjbGo0ZDBqaDYwMHlkM3JsdzZjbHJsdzlpIn0.1NB6CTrTqpuZz1x_x-NiTg';
         var map = new mapboxgl.Map({
-          container: 'map',
-          center: [107.601312,  -6.922819],
-          zoom: 13,
-          style: 'mapbox://styles/mapbox/streets-v11'
+            container: 'map',
+            center: [107.601312, -6.922819],
+            zoom: 13,
+            style: 'mapbox://styles/mapbox/streets-v11'
         });
-        var places = [
-            {
+        var places = [{
                 name: 'TPS Panjunan',
-                coordinates: [ 107.60004692287535, -6.9306364523001385],
+                coordinates: [107.60004692287535, -6.9306364523001385],
                 description: 'Jl. Bojongloa No.53/93, Panjunan, Kec. Astanaanyar, Kota Bandung, Jawa Barat 40242'
-                
+
             },
             {
                 name: 'TPS Pasar Ancol',
@@ -313,7 +324,7 @@
             },
             {
                 name: 'TPS 3R Kebon Jeruk Beriman',
-                coordinates: [ 107.60161292279886,-6.916406668038759],
+                coordinates: [107.60161292279886, -6.916406668038759],
                 description: 'Jl. Babatan No.5, Kb. Jeruk, Kec. Andir, Kota Bandung, Jawa Barat 40181'
             }
             // Add more places as needed
@@ -323,7 +334,9 @@
         places.forEach(function(place) {
             var popup = new mapboxgl.Popup().setHTML('<h3>' + place.name + '</h3><p>' + place.description + '</p>');
 
-            var marker = new mapboxgl.Marker({color: '#ff0000'})
+            var marker = new mapboxgl.Marker({
+                    color: '#ff0000'
+                })
                 .setLngLat(place.coordinates)
                 .addTo(map);
 
@@ -332,5 +345,5 @@
                 marker.togglePopup();
             });
         });
-      </script>
+    </script>
 @endpush

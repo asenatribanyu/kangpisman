@@ -9,7 +9,7 @@ body {
     position: relative;
     min-height: 100vh;
     background-color: #fafafa;
-    padding-bottom: 300px;
+    padding-bottom: 325px;
 }
 
 /* Navigation Bar */
@@ -357,7 +357,7 @@ footer {
 /* Responsive */
 @media screen and (max-width: 768px) {
     body {
-        padding-bottom: 500px;
+        padding-bottom: 575px;
     }
 
     nav.navbars .navbar {

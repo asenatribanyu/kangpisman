@@ -37,11 +37,11 @@ class DatabaseSeeder extends Seeder
         ]);
         
         Category::create([
-            'category_name' =>'Tokyo',
+            'category_name' =>'Sampah',
         ]);
 
         Category::create([
-            'category_name' =>'Kyoto',
+            'category_name' =>'Kebersihan',
         ]);
     }
 }

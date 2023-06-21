@@ -10,21 +10,21 @@
         <div class="login">
             <div class="login-form-wrapper">
                 <div class="login-form">
-                    <h1>{{ __('messages.Welcome') }}</h1>
-                    <small>{{ __('messages.Please sign into your account') }}</small>
+                    <h1>Welcome</h1>
+                    <small>Please sign into your account</small>
 
                     <form action="/login" method="post">
                         @csrf
-                        <label class="label" for="username">{{ __('messages.Username') }}</label>
-                        <input class="box" type="username" id="username" name="username"
-                            placeholder={{ __('messages.Username') }} required />
+                        <label class="label" for="username">Username</label>
+                        <input class="box" type="username" id="username" name="username" placeholder=Username
+                            required />
 
-                        <label class="label" for="password">{{ __('messages.Password') }}</label>
-                        <input class="box" type="password" id="password" name="password"
-                            placeholder={{ __('messages.Enter your password') }} required />
+                        <label class="label" for="password">Password</label>
+                        <input class="box" type="password" id="password" name="password" placeholder=Password
+                            required />
 
                         <button class="login-button" type="submit">
-                            {{ __('messages.Sign-In') }}
+                            Sign-In
                         </button>
                     </form>
                 </div>
