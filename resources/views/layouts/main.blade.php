@@ -73,66 +73,21 @@
     <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <div class="footer-wrapper">
-                <div class="footer-desc">
-                    <a href="/">
-                        <h1>KangPisMan</h1>
-                    </a>
-                    <p>Gerakan KangPisMan merupakan kependekan dari kata Kurangi, Pisahkan dan Manfaatkan Sampah.
-                        Kurangi sampah berarti setiap warga memiliki kesadaran untuk menggunakan kembali barang-barang
-                        yang masih bisa digunakan. Seperti kertas bekas, botol bekas.
-                    </p>
-                </div>
-                <div class="footer-contact">
-                    <h1>Contact</h1>
-                    <p>Gedung B Lt.2, Universitas Widyatama Jl.Cikutra no 204 A Bandung Jawa Barat, Indonesia 40124.
-                    </p>
-                    <p>Phone : +62-22-7275855 ext 228</p>
-                    <p>Fax : +62-22-720299</p>
+            <div class="footer-info">
+                <div class="footer-header">KangPisman</div>
+                <div class="footer-desc-wrapper">
+                    <div class="footer-desc">Gerakan KangPisMan merupakan kependekan dari kata Kurangi, Pisahkan dan
+                        Manfaatkan Sampah. Kurangi sampah berarti setiap warga memiliki kesadaran untuk menggunakan
+                        kembali
+                        barang-barang yang masih bisa digunakan. Seperti kertas bekas, botol bekas.</div>
                 </div>
                 <div class="footer-links">
-                    <h1>Quick Links</h1>
-                    <div class="links-group">
-                        <div class="group-ig">
-                            {{-- <div><a class="wrap" href="https://www.instagram.com/jepangs1_widyatama"
-                                    target="_blank"><i class='bx bxl-instagram'></i>S1 Bahasa Jepang</a>
-                            </div>
-                            <div><a class="wrap" href="https://www.instagram.com/bahasajepangd3_utama/"
-                                    target="_blank"><i class='bx bxl-instagram'></i>D3 Bahasa Jepang</a>
-                            </div> --}}
-                            <div><a class="wrap" href="https://www.instagram.com/himatifutama/" target="_blank"><i
-                                        class='bx bxl-instagram'></i>Teknik Informatika</a></div>
-                        </div>
-                        <div class="group-yt">
-                            {{-- <div><a class="wrap" href="https://www.youtube.com/@s1bahasajepanguniversitasw895"
-                                    target="_blank"><i class='bx bxl-youtube'></i></i>S1 Bahasa Jepang</a>
-                            </div>
-                            <div><a class="wrap" href="https://www.youtube.com/@prodijepangd3" target="_blank"><i
-                                        class='bx bxl-youtube'></i></i>D3 Bahasa Jepang</a>
-                            </div> --}}
-                            {{-- <div><a class="wrap" href="/"><i class='bx bxl-youtube'></i></i>Teknik
-                                    Informatika</a></div> --}}
-                        </div>
-                        <div class="group-url">
-                            {{-- <div><a class="wrap" href="https://bahasajepangs1.widyatama.ac.id/" target="_blank"><i
-                                        class='bx bx-link'></i></i>S1 Bahasa Jepang</a>
-                            </div>
-                            <div><a class="wrap" href="https://bahasajepang.widyatama.ac.id/" target="_blank"><i
-                                        class='bx bx-link'></i></i>D3 Bahasa Jepang</a>
-                            </div> --}}
-                            <div><a class="wrap" href="https://if.widyatama.ac.id/" target="_blank"><i
-                                        class='bx bx-link'></i></i>Teknik
-                                    Informatika</a></div>
-                        </div>
-                    </div>
+                    <a href="https://www.instagram.com/kangpisman" target="_blank">
+                        <i class='bx bxl-instagram'></i></a>
                 </div>
             </div>
-            <div class="footer-copy">
-                <small>Copyright &#169; 2023 Bahasa Jepang Universitas Widyatama | Designed by Teknik
-                    Informatika</small>
-                <small>Crafted With <i class="bx bxs-heart"></i></small>
-            </div>
         </div>
+        <div class="footer-cr">Copyright &#169; 2023 KangPisMan</div>
     </footer>
     <!-- End of Footer -->
 

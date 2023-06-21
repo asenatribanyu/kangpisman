@@ -1396,4 +1396,19 @@
         grid-area: img9;
     }
     /* End of Image Gallery */
+
+    /* Maps */
+    .map-wrapper {
+        width: 100%;
+        height: 300px;
+        margin: auto;
+        margin-block-start: 25px;
+    }
+
+    .map {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+    }
+    /* End of Maps */
 }
