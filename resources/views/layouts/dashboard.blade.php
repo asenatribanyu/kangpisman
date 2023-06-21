@@ -36,7 +36,7 @@
 
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
-    <title>Heiwa {{ $title }}</title>
+    <title>KangPisMan {{ $title }}</title>
 </head>
 
 <body>

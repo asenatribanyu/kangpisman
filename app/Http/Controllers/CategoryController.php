@@ -31,9 +31,9 @@ class CategoryController extends Controller
         $articles->where('type_id', $request->input('type'));
         $type = Type::where('id',$request->input('type'))->get();
         if ($type->first()->type_name === 'Photos') {
-            $select_type = __('messages.Photos');
+            $select_type = 'Photos';
         }else{
-            $select_type = __('messages.Videos');
+            $select_type ='Videos';
         }
         
     }
@@ -41,10 +41,10 @@ class CategoryController extends Controller
     if ($request->has('date')) {
         if ($request->input('date') == 'Oldest') {
             $articles->orderBy('created_at', 'asc');
-            $select_date = __('messages.Oldest');
+            $select_date = 'Oldest';
         } else {
             $articles->orderBy('created_at', 'desc');
-            $select_date = __('messages.Latest');
+            $select_date = 'Latest';
         }
     } else {
         $articles->latest();
