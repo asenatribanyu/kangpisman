@@ -65,8 +65,4 @@ class Article extends Model
     {
     return $this->hasMany(View::class);
     }
-    public function translation($locale)
-    {
-        return $this->articletrans()->where('locale', $locale)->first();
-    }
 }

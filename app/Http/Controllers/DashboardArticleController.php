@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 use Cviebrock\EloquentSluggable\Services\SlugService;
 use App\Models\Article;
-use App\Models\ArticleTrans;
 use App\Models\Category;
 use App\Models\Type;
 use Illuminate\Support\Str;
@@ -188,8 +187,6 @@ class DashboardArticleController extends Controller
     if ($article->thumbnail) {
         Storage::delete($article->thumbnail);
     }
-
-    $article->articletrans()->delete();
     $article->delete();
         return redirect('/dashboard/article/edit');
     }
